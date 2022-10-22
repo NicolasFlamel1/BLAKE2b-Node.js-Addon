@@ -1,6 +1,6 @@
 {
 	"name": "@nicolasflamel/blake2b-native",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Node.js addon for parts of the official BLAKE2b implementation",
 	"main": "./index.js",
 	"files": [

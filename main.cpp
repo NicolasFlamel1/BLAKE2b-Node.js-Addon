@@ -83,7 +83,7 @@ napi_value compute(napi_env environment, napi_callback_info arguments) {
 	
 	// Check if getting result size from arguments failed
 	double resultSize;
-	if(napi_get_value_double(environment, argv[0], &resultSize) != napi_ok || resultSize > numeric_limits<vector<uint8_t>::size_type>::max()) {
+	if(napi_get_value_double(environment, argv[0], &resultSize) != napi_ok || resultSize < 0 || resultSize > numeric_limits<vector<uint8_t>::size_type>::max()) {
 	
 		// Return operation failed
 		return OPERATION_FAILED;
